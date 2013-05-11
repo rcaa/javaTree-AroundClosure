@@ -15,6 +15,9 @@ public class Util {
 				ret = ((AroundClosure) args[i]).run(args);
 			}
 		}
+		for (Object object : args) {
+			System.out.println(object);
+		}
 		return ret;
 	}
 }
